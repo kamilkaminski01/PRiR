@@ -1,4 +1,4 @@
-package lab1;//package cW;
+package lab1_2;//package cW;
 
 public class M_Prostokatow extends Thread{
     private double a;
