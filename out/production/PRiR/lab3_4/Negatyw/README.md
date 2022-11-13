@@ -5,7 +5,7 @@ Napisz program w Javie, w którym w aplikacji wielowątkowej przekształcisz obr
 ## Struktura
 
 - Klasa [`Main`](Main.java) jest główną klasą wyjściową
-- Klasa [`GrayScale`](GrayScale.java) jest klasą generującą obrazek PNG z negatywym obrazku wejściowego `./samples/flower.png`
+- Klasa [`Negatyw`](Negatyw.java) jest klasą generującą obrazek PNG z negatywym obrazku wejściowego `./samples/flower.png`
 - Folder `./samples` znajdujący się w źródłowej ścieżce zawierający obrazki wejściowe
 - Folder `./outputs` znajdujący się w źródłowej ścieżce do której generowana jest grafika. 
 
