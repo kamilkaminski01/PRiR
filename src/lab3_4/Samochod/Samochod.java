@@ -28,9 +28,6 @@ public class Samochod extends Thread {
 				System.out.println("Samochod "+ registration +" musi zatankowac");
 				refueling(r.nextInt(10)+2);
 				break;
-			} else if(fuel <= 0) {
-				System.out.println("Samochod "+ registration +" zatrzymał sie z powodu braku paliwa");
-				stop();
 			}
 			fuel--;
 			try {
