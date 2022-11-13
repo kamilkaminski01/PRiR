@@ -7,18 +7,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Podaj promien kola: ");
-        MonteCarlo.radius = scanner.nextDouble();
+        double radius = scanner.nextInt();
 
         System.out.print("Podaj liczbe prob: ");
         int iterations = scanner.nextInt();
 
-        MonteCarlo m1 = new MonteCarlo(iterations, MonteCarlo.radius, MonteCarlo.radius, 0, 0);
+        MonteCarlo m1 = new MonteCarlo(iterations, 0, 0, radius/2, radius/2);
+        MonteCarlo m2 = new MonteCarlo(iterations, radius/2, 0, 1, radius/2);
+        MonteCarlo m3 = new MonteCarlo(iterations, 0,radius/2, radius/2, radius);
+        MonteCarlo m4 = new MonteCarlo(iterations, radius/2, radius/2, radius, radius);
+
         m1.start();
-        MonteCarlo m2 = new MonteCarlo(iterations, MonteCarlo.radius, MonteCarlo.radius, MonteCarlo.radius, 0);
         m2.start();
-        MonteCarlo m3 = new MonteCarlo(iterations, MonteCarlo.radius, MonteCarlo.radius, 0, MonteCarlo.radius);
         m3.start();
-        MonteCarlo m4 = new MonteCarlo(iterations, MonteCarlo.radius, MonteCarlo.radius, MonteCarlo.radius, MonteCarlo.radius);
         m4.start();
 
         try {
@@ -30,8 +31,8 @@ public class Main {
         	e.printStackTrace();
         }
 
-        double surface = (m1.result + m2.result + m3.result + m4.result)/MonteCarlo.iterations*Math.pow(2*MonteCarlo.radius, 2);
-        double pi = 4*(m1.result + m2.result + m3.result + m4.result)/MonteCarlo.iterations;
+        double surface = (m1.result + m2.result + m3.result + m4.result) / iterations*4 * (radius*radius);
+        double pi = (m1.result + m2.result + m3.result + m4.result) / iterations;
         System.out.println("PI: "+pi);
         System.out.println("Pole kola wynosi: "+surface);
 	}
