@@ -10,7 +10,7 @@ Napisz program w Javie, w którym na podstawie kodu do generowania fraktala Mand
 
 ## Uruchamianie
 
-Po uruchomieniu klasy [`Main`](Main.java) w konsoli otrzymujemy informację w jakim czasie Fraktal został wygenerowany, a grafika zostaje zapisana w folderze `./outputs` o nazwie `julia.png`
+Po uruchomieniu klasy [`Main`](Main.java) w konsoli wyświetla się informacja w jakim czasie fraktal został wygenerowany, a grafika zostaje zapisana w folderze `./outputs` o nazwie `julia.png`
 
 ### Troubleshooting
 

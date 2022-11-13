@@ -7,7 +7,11 @@ opcje: (wybór jednego z 3 wariantów do uruchomienia, sterowanie liczbą filozo
 ## Struktura
 
 - Klasa [`Main`](Main.java) jest główną klasą wyjściową.
-- Klasy [`Filozofowie1`](Filozofowie1.java), [`Filozofowie2`](Filozofowie2.java), [`Filozofowie3`](Filozofowie3.java) są trzema kolejnymi wariantami problemu  
+- Klasy [`Filozofowie1`](Filozofowie1.java), [`Filozofowie2`](Filozofowie2.java), [`Filozofowie3`](Filozofowie3.java) są trzema kolejnymi rozwiązaniami problemu:
+  - [`Filozofowie1`](Filozofowie1.java), ograniczenie do czterech filozofów trzymających widelce jednocześnie
+  - [`Filozofowie2`](Filozofowie2.java), rzut monetą
+  - [`Filozofowie3`](Filozofowie3.java), niesymetryczne sięganie po widelce
+
 
 ## Uruchamianie
 
@@ -17,4 +21,4 @@ Po wyborze odpowiednich parametrów, w konsoli wyświetlają się komunikaty o d
 
 ## Zakończenie
 
-Program trwa w nieskończoność, więc aby zakończyć program należy wyłączyć działanie poprzez przycisk "Stop `Main`" w swoim IDE.
+Program trwa w nieskończoność, więc należy zakończyć przyciskiem "Stop `Main`" w swoim IDE.

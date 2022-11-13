@@ -3,8 +3,8 @@ package lab3_4.Filozofowie;
 import java.util.concurrent.Semaphore;
 
 public class Filozofowie3 extends Thread{
-	static int MAX = 100;
-	static Semaphore[] fork = new Semaphore[MAX];
+	static int MAX;
+	static Semaphore[] fork;
 	int num;
 
 	public Filozofowie3(int num) {
@@ -46,6 +46,7 @@ public class Filozofowie3 extends Thread{
 
 	public static void process(int max) {
 		MAX = max;
+		fork = new Semaphore[MAX];
 
 		for (int i=0; i<MAX; i++)
 			fork[i] = new Semaphore(1);
