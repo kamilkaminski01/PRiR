@@ -16,4 +16,4 @@ W konsoli wyświetlalą się komunikaty:
 
 ## Zakończenie
 
-Program trwa w nieskończoność, więc aby zakończyć program należy wyłączyć działanie poprzez przycisk "Stop `Main`" w swoim IDE.
+Program trwa w nieskończoność, więc należy zakończyć przyciskiem "Stop `Main`" w swoim IDE.

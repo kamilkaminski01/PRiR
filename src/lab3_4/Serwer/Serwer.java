@@ -21,7 +21,8 @@ class Serwer extends Thread {
         String document =
                 "<html>\r\n" +
                     "<body><br>\r\n" +
-                        "<h2><font color=red>jHTTPApp demo\r\n" + "</font></h2>\r\n" +
+                        "<h1><font color=red>Programowanie Rownolegle i Rozproszone\r\n" + "</font></h1>\r\n" +
+                        "<h2><font color=blue>jHTTPApp demo\r\n" + "</font></h2>\r\n" +
                         "<h3>Serwer na watkach</h3>" +
                         "<hr>\r\n" +
                             "Data: <b>" + new Date() + "</b><br>\r\n" +

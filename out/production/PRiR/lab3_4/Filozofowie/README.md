@@ -9,7 +9,7 @@ opcje: (wybór jednego z 3 wariantów do uruchomienia, sterowanie liczbą filozo
 - Klasa [`Main`](Main.java) jest główną klasą wyjściową.
 - Klasy [`Filozofowie1`](Filozofowie1.java), [`Filozofowie2`](Filozofowie2.java), [`Filozofowie3`](Filozofowie3.java) są trzema kolejnymi rozwiązaniami problemu:
   - [`Filozofowie1`](Filozofowie1.java), ograniczenie do czterech filozofów trzymających widelce jednocześnie
-  - [`Filozofowie2`](Filozofowie2.java), rzut monetą
+  - [`Filozofowie2`](Filozofowie2.java), decyzja rzutem monetą podniesie widelec jako pierwszy
   - [`Filozofowie3`](Filozofowie3.java), niesymetryczne sięganie po widelce
 
 
