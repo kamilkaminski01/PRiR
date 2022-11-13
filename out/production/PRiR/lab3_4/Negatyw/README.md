@@ -15,4 +15,4 @@ Po uruchomieniu klasy [`Main`](Main.java) w konsoli otrzymujemy informację w ja
 
 ### Troubleshooting
 
-Jeśli występuje błąd `(No such file or directory)`, należy w ścieżce źródłowej utworzyć katalog o nazwie `outputs`.
+Jeśli występuje błąd `(No such file or directory)`, należy w ścieżce źródłowej utworzyć folder o nazwie `outputs` lub utworzyć folder o nazwie `samples` z plikiem `flower.png`

@@ -6,16 +6,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 
 public class Main {
-
     public static void main(String[] args) throws Exception {
 		long start = System.currentTimeMillis();
-		for(int i=0; i<4; i++) {
+		for(int i = 0; i < 4; i++) {
 			FraktalJulii j = new FraktalJulii(i);
 			j.start();
 			j.join();
 		}
-		long end = System.currentTimeMillis();
-		System.out.println("Obliczenia zakończone w " +(end-start)+ " millisekund");
 
 		//wstawianie pixeli
 		BufferedImage img = new BufferedImage(FraktalJulii.N, FraktalJulii.N, BufferedImage.TYPE_INT_ARGB);
@@ -23,7 +20,6 @@ public class Main {
 			for (int j = 0; j < FraktalJulii.N; j++) {
 				int k = FraktalJulii.set[i][j];
 				float level;
-
 				if (k < FraktalJulii.CUTOFF)
 					//pixel o wspolrzednych i,j należy do zbioru Julii
 					level = (float) k / FraktalJulii.CUTOFF;
@@ -35,5 +31,7 @@ public class Main {
 			}
 		}
 		ImageIO.write(img, "PNG", new File("outputs/julia.png"));
+		long end = System.currentTimeMillis();
+		System.out.println("Obliczenia zakończone w " +(end-start)+ " millisekund");
 	}
 }

@@ -5,6 +5,8 @@ public class FraktalJulii extends Thread {
 	final static int CUTOFF = 100;
 	static int[][] set = new int[N][N];
 	int index;
+	int begin = 0;
+	int end = 0;
 
 	//ustawienie numeracji wątków
 	public FraktalJulii(int index) {
@@ -14,8 +16,6 @@ public class FraktalJulii extends Thread {
 	//procedura wykonywana przez każdy z 4 wątków sprawdzająca czy dany punkt należy do zbioru Julii
 	@Override
 	public void run() {
-		int begin = 0, end = 0;
-
 		switch (index) {
 			case 0 -> {
 				// begin = 0;
@@ -38,8 +38,8 @@ public class FraktalJulii extends Thread {
 		for (int i = begin; i < end; i++) {
 			for (int j = 0; j < N; j++) {
 				//przeskalowanie punktów do układu wspolrzednych kartezjanskich
-				double cr = -0.25;//-0.2;
-                double ci = 0.76;//0.65;
+				double cr = -0.25; //-0.2;
+                double ci = 0.76; //0.65;
                 double zr = i * (1.25 - -1.25) / N + -1.25;
                 double zi = j * (1.25 - -1.25) / N + -1.25;
                 int k = 0;
