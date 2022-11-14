@@ -1,13 +1,13 @@
 package lab3_4.MonteCarlo;
 
 public class MonteCarlo extends Thread {
-    static int iterations;
+    int iterations;
     double xStart, yStart, xStop, yStop;
     double result = 0;
     int in = 0;
 
     public MonteCarlo(int iterations, double xStart, double yStart, double xStop, double yStop) {
-        MonteCarlo.iterations = iterations;
+        this.iterations = iterations;
         this.xStart = xStart;
         this.yStart = yStart;
         this.xStop = xStop;
@@ -16,7 +16,7 @@ public class MonteCarlo extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < iterations; i++) {
+        for (int i = 0; i < iterations/4; i++) {
             double x = Math.random();
             double y = Math.random();
 

@@ -14,6 +14,5 @@ Po uruchomieniu klasy [`Main`](Main.java) należy podać promień koła oraz lic
 Wątki wykonują obliczenia, a w konsoli wyświetlają się informacje: 
 - `In`, czyli ile punktów znalazło się w okręgu,
 - `All`, czyli ile punktów zostało wygenerowanych ogólnie,
-- `PI`, czyli uśredniona liczba pi z czterech wątków,
 - `Pole kola`, czyli uśrednione pole powierzchni koła z czterech wątków.
 
